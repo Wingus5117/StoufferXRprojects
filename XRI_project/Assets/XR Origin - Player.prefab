@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3594549661146327834}
   - component: {fileID: 1629171479360011787}
-  - component: {fileID: 832383513896434293}
   m_Layer: 0
   m_Name: RayInteractor
   m_TagString: Untagged
@@ -164,24 +163,6 @@ MonoBehaviour:
   m_OccludeARHitsWith3DObjects: 0
   m_OccludeARHitsWith2DObjects: 0
   m_ScaleMode: 0
---- !u!114 &832383513896434293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21045745391610317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a50d88b55b45648927679791f472de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_GroupName: 
-  m_InteractionManager: {fileID: 0}
-  m_StartingGroupMembers:
-  - {fileID: 1629171479360011787}
-  - {fileID: 5535042704539492080}
-  m_StartingInteractionOverridesMap: []
 --- !u!1 &330360480145249486
 GameObject:
   m_ObjectHideFlags: 0
