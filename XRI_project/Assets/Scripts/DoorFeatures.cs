@@ -1,18 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class DoorFeatures : MonoBehaviour
+public class DoorFeatures : CoreFeatures
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Door Confing")]
+    public Transform doorPivot;
+    public float maximumPivotAngle = 90f;
+    public bool reversePivotDirection = false;
+    public float DoorSpeed = 2f;
+    public bool DoorOpen = false;
+    public bool makeKinematicOnOpen = false;
+
+    [Header("Interactions Config")]
+    public XRSocketInteractor SocketInteractor;
+    public XRSimpleInteractable SimpleInteractable;
+
+    private void Start()
     {
-        
+        SocketInteractor?.selectEntered.AddListener((s) =>
+        {
+            OpenDoor();
+        });
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void OpenDoor()
+    { 
+    
     }
+   
 }

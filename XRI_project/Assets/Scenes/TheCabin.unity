@@ -613,6 +613,7 @@ GameObject:
   m_Component:
   - component: {fileID: 864168137}
   - component: {fileID: 864168136}
+  - component: {fileID: 864168138}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -649,6 +650,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &864168138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864168135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f7f0becba385bc48b7a3fda0651be41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &873458516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -935,6 +948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4944100761351188}
+  - component: {fileID: 4944100761351189}
   m_Layer: 0
   m_Name: Bedroom Door
   m_TagString: Untagged
@@ -1023,6 +1037,18 @@ Transform:
   - {fileID: 1165212234}
   m_Father: {fileID: 485347255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4944100761351189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838813210071750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b3ef5376561bee4f8f2166127998b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &65969928857099540
 BoxCollider:
   m_ObjectHideFlags: 0

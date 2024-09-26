@@ -16,7 +16,7 @@ public class CoreFeatures : MonoBehaviour
     //proporties have two way to acsess them
     //get accessor is reading a value
     //set accessor is writing a value
-
+    
     public bool AudioSFXSourceCreated {  get; set; }
 
     
@@ -24,7 +24,7 @@ public class CoreFeatures : MonoBehaviour
     [field: SerializeField] public AudioClip AudioClipOnStart { get; set; }
 
     //Audio plays on door close
-    [field: SerializeField] public AudioClip AudioClipOnClose { get; set; }
+    [field: SerializeField] public AudioClip AudioClipOnEnd { get; set; }
 
     private AudioSource audioSource;
 
@@ -37,9 +37,32 @@ public class CoreFeatures : MonoBehaviour
 
     private void MakeSFXAudioScource()
     {
+        audioSource = GetComponent<AudioSource>();
+
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+        
+        AudioSFXSourceCreated = true;
     }
+
+    protected void PlayOnStart()
+    {
+        if (AudioSFXSourceCreated && AudioClipOnStart != null)
+        {
+            audioSource.clip = AudioClipOnStart;
+            audioSource.Play();
+        }
+    }
+    
+    protected void PlayOnEnd()
+    {
+        if (AudioSFXSourceCreated && AudioClipOnEnd != null)
+        {
+            audioSource.clip = AudioClipOnEnd;
+            audioSource.Play();
+        }
+    }
+
 }
