@@ -1184,6 +1184,18 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 864168136}
+    - target: {fileID: 3641761059346016427, guid: e5080c03c1546614db220a007a79c1b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499518760989759769, guid: e5080c03c1546614db220a007a79c1b0, type: 3}
+      propertyPath: m_LineType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4499518760989759769, guid: e5080c03c1546614db220a007a79c1b0, type: 3}
+      propertyPath: m_Velocity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4499518760989759769, guid: e5080c03c1546614db220a007a79c1b0, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -1232,6 +1244,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 864168136}
+    - target: {fileID: 5672660730272302846, guid: e5080c03c1546614db220a007a79c1b0, type: 3}
+      propertyPath: m_OverrideInteractorLineOrigin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7054123021881745431, guid: e5080c03c1546614db220a007a79c1b0, type: 3}
       propertyPath: m_InteractionManager
       value: 
